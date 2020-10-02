@@ -19,5 +19,7 @@ Route::prefix('backend')->group(function() {
     Route::post('auth/login', 'AuthController@checkLogin')->name('backend.auth.checkLogin');
     Route::post('auth/forgot-password', 'AuthController@forgotPassword')->name('backend.auth.forgotPassword');
 
-    Route::get('/', 'BackendController@index');
+    Route::middleware([\Modules\Backend\Http\Middleware\User::class])->group(function (){
+        Route::get('/', 'BackendController@index');
+    });
 });
