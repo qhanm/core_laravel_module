@@ -1,0 +1,11 @@
+{
+    "Backend": true,
+    "Plugins": true,
+    "Themes": true,
+    "PluginsFileManager": true,
+    "Test": true,
+    "FileManger": true,
+    "FileManager": true,
+    "Plugins\/FileManager": true,
+    "Frontend": true
+}
