@@ -7,7 +7,7 @@
         <title>Module Frontend</title>
 
        {{-- Laravel Mix - CSS File --}}
-       {{-- <link rel="stylesheet" href="{{ mix('css/frontend.css') }}"> --}}
+        <link rel="stylesheet" href="{{ Module::asset('frontend:js/app.js') }}">
 
     </head>
     <body>

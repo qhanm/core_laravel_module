@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27806a427e4f1f558dc652a83a330bb2",
+    "content-hash": "67dd826f1a83d50635eebe304fcff9f8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -737,6 +737,57 @@
                 "url"
             ],
             "time": "2020-09-30T07:37:11+00:00"
+        },
+        {
+            "name": "jacobbennett/pjax",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JacobBennett/pjax.git",
+                "reference": "44bc5cd0ce95c3e018bc844894a2b5d1c3bd478f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JacobBennett/pjax/zipball/44bc5cd0ce95c3e018bc844894a2b5d1c3bd478f",
+                "reference": "44bc5cd0ce95c3e018bc844894a2b5d1c3bd478f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "symfony/css-selector": "3.0.*|3.1.*",
+                "symfony/dom-crawler": "3.0.*|3.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JacobBennett\\Pjax": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Talbot",
+                    "email": "vtalbot@re-bot.co"
+                },
+                {
+                    "name": "Simon Stamm",
+                    "email": "simon@stammtec.de"
+                },
+                {
+                    "name": "Jacob Bennett",
+                    "email": "me@jakebennett.net",
+                    "homepage": "http://jakebennett.net"
+                }
+            ],
+            "description": "PJAX for Laravel 5",
+            "keywords": [
+                "laravel",
+                "pjax"
+            ],
+            "time": "2016-10-24T16:26:02+00:00"
         },
         {
             "name": "kris/laravel-form-builder",
@@ -2559,25 +2610,25 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v5.1.6",
+            "version": "v3.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "e544e24472d4c97b2d11ade7caacd446727c6bf9"
+                "reference": "722a87478a72d95dc2a3bcf41dc9c2d13fd4cb2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/e544e24472d4c97b2d11ade7caacd446727c6bf9",
-                "reference": "e544e24472d4c97b2d11ade7caacd446727c6bf9",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/722a87478a72d95dc2a3bcf41dc9c2d13fd4cb2d",
+                "reference": "722a87478a72d95dc2a3bcf41dc9c2d13fd4cb2d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5"
+                "php": ">=5.5.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.1-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -2594,12 +2645,12 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
                     "name": "Jean-François Simon",
                     "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 },
                 {
                     "name": "Symfony Community",
@@ -2608,21 +2659,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-05-20T17:43:50+00:00"
+            "time": "2017-01-02T20:31:54+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -2687,6 +2724,62 @@
                 }
             ],
             "time": "2020-09-07T11:33:47+00:00"
+        },
+        {
+            "name": "symfony/dom-crawler",
+            "version": "v3.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "7eede2a901a19928494194f7d1815a77b9a473a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/7eede2a901a19928494194f7d1815a77b9a473a0",
+                "reference": "7eede2a901a19928494194f7d1815a77b9a473a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/css-selector": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony DomCrawler Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-01-21T17:13:55+00:00"
         },
         {
             "name": "symfony/error-handler",

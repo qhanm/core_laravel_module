@@ -5,15 +5,29 @@ namespace Modules\Backend\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Modules\Backend\Entities\User;
+use Modules\Backend\Repositories\Interfaces\UserRepositoryInterface;
+use Spatie\Permission\Models\Role;
 
 class BackendController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     * @return Renderable
+    /***
+     * @var UserRepositoryInterface
      */
+    protected $userRepository;
+
+    public function __construct(UserRepositoryInterface $userRepository)
+    {
+        $this->userRepository = $userRepository;
+    }
+
+
     public function index()
     {
+        $user = Auth::user();
+        dd($user->permissions);
         return view('backend::index');
     }
 

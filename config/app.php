@@ -175,6 +175,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // laravel form builder
+        Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
+
+        // role permission
+        Spatie\Permission\PermissionServiceProvider::class,
+
     ],
 
     /*
@@ -227,6 +233,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        // laravel form builder
+        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
     ],
 
 ];

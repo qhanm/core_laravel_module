@@ -15,7 +15,10 @@ class BackendDatabaseSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-
+        $this->call([
+            UserTableSeeder::class,
+            RoleTableSeeder::class,
+        ]);
         // $this->call("OthersTableSeeder");
     }
 }
