@@ -2,6 +2,7 @@
 namespace Modules\Backend\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Modules\Backend\Entities\User;
 
 class RoleTableSeeder extends Seeder
 {
@@ -28,6 +29,9 @@ class RoleTableSeeder extends Seeder
         ];
 
         $role = \Spatie\Permission\Models\Role::create(['name' => 'superadmin']);
+        $user = User::all()->first();
+
+        $user->assignRole($role);
         foreach($list as $item)
         {
             $permission = \Spatie\Permission\Models\Permission::create(['name' => $item]);

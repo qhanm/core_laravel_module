@@ -22,6 +22,8 @@ Route::post('backend/auth/forgot-password', 'AuthController@forgotPassword')->na
 Route::middleware([\Modules\Backend\Http\Middleware\User::class])->prefix('dashboard')->group(function () {
     Route::get('/', 'BackendController@index')->name('backend.dashboard.index');
 
+    Route::get('/users', 'UserController@index')->name('backend.user.index');
+    Route::get('/roles', 'RoleController@index')->name('backend.role.index');
 });
 
 //Route::middleware([\Modules\Backend\Http\Middleware\User::class])->group(function (){

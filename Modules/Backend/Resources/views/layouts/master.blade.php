@@ -58,11 +58,12 @@
 
 <!-- JAVASCRIPT -->
 <script src="{{ Module::asset('backend:libs/jquery/jquery.min.js') }}"></script>
+<script src="{{ Module::asset('backend:js/jquery.pjax.js') }}"></script>
+
 <script src="{{ Module::asset('backend:libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ Module::asset('backend:libs/metismenu/metisMenu.min.js') }}"></script>
 <script src="{{ Module::asset('backend:libs/simplebar/simplebar.min.js') }}"></script>
 <script src="{{ Module::asset('backend:libs/node-waves/waves.min.js') }}"></script>
-@yield('scripts')
 
 <script src="{{ Module::asset('backend:libs/summernote/summernote-bs4.min.js') }}"></script>
 <script src="{{ Module::asset('backend:js/pages/form-editor.init.js') }}"></script>
@@ -77,6 +78,15 @@
 
 <script src="{{ Module::asset('backend:js/app.js') }}"></script>
 {{--<script src="{{ Module::asset('assets/Backend/js/app.js') }}"></script>--}}
+<script>
+    $(document).ready(function(){
+        // does current browser support PJAX
+        if ($.support.pjax) {
+            $.pjax.defaults.timeout = 1000; // time in milliseconds
+        }
 
+    });
+</script>
+@yield('scripts')
 </body>
 </html>

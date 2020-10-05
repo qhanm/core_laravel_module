@@ -181,6 +181,9 @@ return [
         // role permission
         Spatie\Permission\PermissionServiceProvider::class,
 
+        // sortable
+        Kyslik\ColumnSortable\ColumnSortableServiceProvider::class,
+
     ],
 
     /*

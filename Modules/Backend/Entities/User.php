@@ -3,6 +3,7 @@
 namespace Modules\Backend\Entities;
 
 use Illuminate\Foundation\Auth\User as Authentication;
+use Kyslik\ColumnSortable\Sortable;
 use Spatie\Permission\Traits\HasRoles;
 
 /**
@@ -13,9 +14,16 @@ use Spatie\Permission\Traits\HasRoles;
  */
 class User extends Authentication
 {
-    use HasRoles;
+    use HasRoles, Sortable;
 
     protected $table = 'users';
+
+    protected $sortable = [
+        'id',
+        'username',
+        'email',
+        'name'
+    ];
 
     protected $fillable = [
         'email',
