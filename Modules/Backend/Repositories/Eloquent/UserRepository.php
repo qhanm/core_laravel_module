@@ -12,4 +12,11 @@ class UserRepository extends RepositoryAbstract implements UserRepositoryInterfa
     {
         return User::class;
     }
+
+    public function all(array $params = [])
+    {
+        $users = User::where('id', '>', 30)->sortable()->paginate(10);
+
+        return $users;
+    }
 }

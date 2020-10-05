@@ -1,34 +1,20 @@
 <?php
 
-namespace Modules\Backend\Http\Controllers;
+namespace Modules\Table\Http\Controllers;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Modules\Backend\Entities\User;
-use Modules\Backend\Repositories\Interfaces\UserRepositoryInterface;
 
-class UserController extends Controller
+class TableController extends Controller
 {
     /**
-     * @var UserRepositoryInterface
-     */
-    protected $userRepository;
-    public function __construct(UserRepositoryInterface $userRepository)
-    {
-        $this->userRepository = $userRepository;
-    }
-
-
-    /**
      * Display a listing of the resource.
-     * @param User $user
      * @return Renderable
      */
-    public function index(User $user)
+    public function index()
     {
-        $users = $this->userRepository->all();
-        return view('backend::user.index')->withUsers($users);
+        return view('table::index');
     }
 
     /**
@@ -37,7 +23,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('backend::create');
+        return view('table::create');
     }
 
     /**
@@ -57,7 +43,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        return view('backend::show');
+        return view('table::show');
     }
 
     /**
@@ -67,7 +53,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        return view('backend::edit');
+        return view('table::edit');
     }
 
     /**

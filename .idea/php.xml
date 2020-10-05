@@ -110,6 +110,7 @@
       <path value="$PROJECT_DIR$/vendor/kris/laravel-form-builder" />
       <path value="$PROJECT_DIR$/vendor/jacobbennett/pjax" />
       <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/kyslik/column-sortable" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

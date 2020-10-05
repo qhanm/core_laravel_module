@@ -7,5 +7,7 @@
     "FileManger": true,
     "FileManager": true,
     "Plugins\/FileManager": true,
-    "Frontend": true
+    "Frontend": true,
+    "Table": true,
+    "Table1": true
 }
