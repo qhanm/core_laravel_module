@@ -17,7 +17,7 @@
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
                             <li><a href="{{ route('backend.user.index') }}">{{ __('backend::sidebar.users') }}</a></li>
-                            <li><a href="dashboard-saas.html">{{ __('backend::sidebar.roles') }}</a></li>
+                            <li><a href="{{ route('backend.role.index') }}">{{ __('backend::sidebar.roles') }}</a></li>
                         </ul>
                     </li>
                 @endif

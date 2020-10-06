@@ -19,8 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('username', 150)->unique()->nullable(false);
             $table->string('email', 150)->unique()->nullable(false);
             $table->string('password', 100);
+            $table->string('avatar');
+            $table->smallInteger('status')->default(10); // status active
             $table->rememberToken();
-            $table->timestamps();
+            $table->timestamp('created_at')->default(\Illuminate\Support\Facades\DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->nullable()->default(null);
         });
     }
 

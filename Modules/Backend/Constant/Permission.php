@@ -8,6 +8,8 @@ class Permission
     const USER_CREATE = 'user.create';
     const USER_DELETE = 'user.delete';
 
+    const PERMISSION_USER_LIST = 'permission:user.list';
+
     public static function getUserSidebar()
     {
         return [

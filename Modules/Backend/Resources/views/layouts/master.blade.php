@@ -32,7 +32,8 @@
 <!-- ========== Left Sidebar Start ========== -->
     <!-- Left Sidebar End -->
 @include('backend::layouts.sidebar')
-<!-- ============================================================== -->
+    <div class="loader" style="display: none"></div>
+    <!-- ============================================================== -->
     <!-- Start right Content here -->
     <!-- ============================================================== -->
     <div class="main-content">
@@ -83,6 +84,8 @@
         // does current browser support PJAX
         if ($.support.pjax) {
             $.pjax.defaults.timeout = 1000; // time in milliseconds
+            $.pjax.defaults.push = true;
+            $.pjax.defaults.scrollTo = false;
         }
 
     });

@@ -5,16 +5,28 @@ namespace Modules\Backend\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Backend\Repositories\Interfaces\RoleRepositoryInterface;
+use Modules\Backend\Repositories\ParamRequest;
 
 class RoleController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     * @return Renderable
-     */
-    public function index()
+    protected $roleRepository;
+
+    public function __construct(RoleRepositoryInterface $roleRepository)
     {
-        return view('backend::index');
+        $this->roleRepository = $roleRepository;
+
+        $this->middleware(['role:superadmin'])->only('index');
+    }
+
+
+    public function index(Request $request)
+    {
+        $paramRequest = new ParamRequest();
+        $request = $request->only($paramRequest->getFillable());
+        $paramRequest->fill($request);
+        dd($this->roleRepository->getAll($paramRequest));
+        return view('backend::role.index');
     }
 
     /**

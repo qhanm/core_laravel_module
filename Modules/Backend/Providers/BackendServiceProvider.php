@@ -4,7 +4,9 @@ namespace Modules\Backend\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Modules\Backend\Repositories\Eloquent\RoleRepository;
 use Modules\Backend\Repositories\Eloquent\UserRepository;
+use Modules\Backend\Repositories\Interfaces\RoleRepositoryInterface;
 use Modules\Backend\Repositories\Interfaces\UserRepositoryInterface;
 
 class BackendServiceProvider extends ServiceProvider
@@ -43,7 +45,11 @@ class BackendServiceProvider extends ServiceProvider
         $this->app->register(RouteServiceProvider::class);
         $this->app->singleton(
             UserRepositoryInterface::class,
-            UserRepository::class,
+            UserRepository::class
+        );
+        $this->app->singleton(
+            RoleRepositoryInterface::class,
+            RoleRepository::class
         );
     }
 

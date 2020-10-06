@@ -76,3 +76,10 @@ function getFullPathCurrent()
 {
     return window.location.protocol + "//" + window.location.hostname + window.location.pathname;
 }
+
+$(document).on('pjax:send', function() {
+    $('.loader').show()
+})
+$(document).on('pjax:complete', function() {
+    $('.loader').hide()
+})

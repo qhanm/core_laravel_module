@@ -1,7 +1,9 @@
 <?php
 namespace Modules\Backend\Repositories\Interfaces;
 
+use Modules\Backend\Repositories\ParamRequest;
+
 interface UserRepositoryInterface
 {
-    public function all(array $params = []);
+    public function getAll(ParamRequest $paramRequest);
 }

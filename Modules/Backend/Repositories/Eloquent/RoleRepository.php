@@ -2,6 +2,7 @@
 namespace Modules\Backend\Repositories\Eloquent;
 
 use Modules\Backend\Repositories\Interfaces\RoleRepositoryInterface;
+use Modules\Backend\Repositories\ParamRequest;
 use Modules\Backend\Repositories\RepositoryAbstract;
 use Spatie\Permission\Models\Role;
 
@@ -15,5 +16,10 @@ class RoleRepository extends RepositoryAbstract implements RoleRepositoryInterfa
     public function getByUser($userId, array $params = [])
     {
 
+    }
+
+    public function getAll(ParamRequest $paramRequest)
+    {
+        dd(Role::all());
     }
 }
