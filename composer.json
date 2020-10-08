@@ -18,7 +18,8 @@
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
         "nwidart/laravel-modules": "^7.2",
-        "spatie/laravel-permission": "^3.17"
+        "spatie/laravel-permission": "^3.17",
+        "laravelcollective/html": "~6.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

@@ -20,23 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3eab8c7a-4efc-4d8d-8139-21389944a306" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Table/Libs/RenderTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Table/Resources/views/layouts/body.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Table/Resources/views/layouts/left_header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Table/Resources/views/layouts/paginate.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Table/Resources/views/layouts/right_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Libs/Render/Breadcrumb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Libs/Render/GridView.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/layouts/breadcrumb.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/layouts/grid_view.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/user/index_bk.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Backend/Repositories/Eloquent/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Backend/Repositories/Eloquent/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Backend/Repositories/Interfaces/UserRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Backend/Repositories/Interfaces/UserRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Backend/Resources/assets/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Backend/Resources/assets/css/app.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Backend/Resources/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Backend/Resources/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Backend/Resources/views/role/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/role/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Backend/Resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules_statuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/modules/backend/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/modules/backend/css/app.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/modules/backend/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/modules/backend/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +165,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/Backend/Resources/views/user" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -179,15 +173,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Learning\xampp_new\htdocs\core_laravel_module\Modules\Backend\Database\Migrations" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\test3\Modules\Backend\Resources\views\user" />
       <recent name="D:\Learning\xampp_new\htdocs\core_laravel_module\Modules\Backend\Resources\lang\vn" />
       <recent name="D:\Learning\xampp_new\htdocs\core_laravel_module\Modules\Backend\Resources\lang\en" />
       <recent name="D:\Learning\xampp_new\htdocs\core_laravel_module\Modules\Backend\Database\Migrations" />
       <recent name="D:\Learning\xampp_new\htdocs\core_laravel_module\Modules\Backend\Database\Seeders" />
-      <recent name="D:\Learning\xampp_new\htdocs\core_laravel_module\Modules\Backend\Http\Forms" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Learning\xampp_new\htdocs\core_laravel_module\Modules\Backend\Database\Migrations" />
     </key>
   </component>
   <component name="RunManager">
@@ -213,6 +207,9 @@
       <workItem from="1601775731318" duration="4308000" />
       <workItem from="1601822715089" duration="3179000" />
       <workItem from="1601902439348" duration="8401000" />
+      <workItem from="1602034959570" duration="290000" />
+      <workItem from="1602058087770" duration="1282000" />
+      <workItem from="1602145831405" duration="7244000" />
     </task>
     <servers />
   </component>
@@ -236,15 +233,20 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="2036" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1601822617481" />
-    <state x="1518" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601823102556">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state x="152" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602147154918">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1518" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1601823102556" />
-    <state x="2106" y="274" key="FileChooserDialogImpl" timestamp="1601734606892">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state x="152" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602147154918" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1602150001347">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2106" y="274" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1601734606892" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601632838275" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602150001347" />
+    <state x="764" y="439" key="NewPhpFileDialog" timestamp="1602058166039">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="764" y="439" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602058166039" />
     <state x="1827" y="165" key="SettingsEditor" timestamp="1601740014770">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>

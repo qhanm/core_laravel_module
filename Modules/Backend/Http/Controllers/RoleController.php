@@ -5,6 +5,7 @@ namespace Modules\Backend\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Backend\Libs\Render\Breadcrumb;
 use Modules\Backend\Repositories\Interfaces\RoleRepositoryInterface;
 use Modules\Backend\Repositories\ParamRequest;
 
@@ -25,7 +26,6 @@ class RoleController extends Controller
         $paramRequest = new ParamRequest();
         $request = $request->only($paramRequest->getFillable());
         $paramRequest->fill($request);
-        dd($this->roleRepository->getAll($paramRequest));
         return view('backend::role.index');
     }
 
